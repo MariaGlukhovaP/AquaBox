@@ -1,0 +1,663 @@
+:root {
+  --main-color: #5173c9;
+  --mt: 6rem;
+  --mrl: 12.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter-Regular";
+  font-size: 16px;
+  color: #1e1e1e;
+  overflow-x: hidden;
+}
+
+p {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.title-container {
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-family: "Inter-Medium";
+  margin: 0;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.title-desc {
+  font-size: 20px;
+}
+
+/* Шапка */
+.selected {
+  font-family: "Inter-SemiBold";
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 0 var(--mrl);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 33%;
+  font-size: 20px;
+}
+
+.menu-item:hover {
+  transform: scale(1.1);
+  transition: all 0.1s ease;
+}
+
+.call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+.call-btn {
+  color: var(--main-color);
+  font-family: "Inter-SemiBold";
+}
+
+/* Блок с преимуществами */
+.advantages {
+  background-image: url("img/Rectangle\ 1.png");
+  width: 100vw;
+  height: 650px;
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  padding: 5rem 0 0 20rem;
+}
+
+.adv-header {
+  font-family: "Inter-SemiBold";
+  font-size: 40px;
+}
+
+.aquabox {
+  font-family: "Audiowide";
+  font-size: 40px;
+  display: inline;
+}
+
+.adv-adress {
+  font-size: 30px;
+  font-family: "Inter-SemiBold";
+  margin-bottom: 40px;
+  margin-top: 5px;
+  color: var(--main-color);
+}
+
+.adv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.adv-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60rem;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 10rem;
+  row-gap: 2rem;
+}
+
+/* Форма для подписки */
+.subscription-container {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription {
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5rem;
+  padding: 2rem 3rem;
+  max-width: 700px;
+  border-radius: 3px;
+  margin-top: var(--mt);
+}
+
+.sub-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+.sub-left p:first-child {
+  font-size: 24px;
+  font-family: "Inter-SemiBold";
+  margin: 0;
+}
+
+.sub-left p:last-child {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.sub-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 20px;
+  font-family: "Inter-Regular";
+  width: 22rem;
+  height: 2.5rem;
+  border-radius: 15px;
+  border: none;
+}
+
+input[type="submit"],
+.more-rev-btn {
+  font-size: 20px;
+  border-radius: 20px;
+  border: 3px solid white;
+  color: white;
+  background-color: transparent;
+  margin-top: 1rem;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+input[type="submit"] {
+  width: 150px;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.05);
+  transition: all 0.1s ease;
+}
+
+input[type="submit"]:active {
+  color: var(--main-color);
+  background-color: white;
+}
+
+input::placeholder {
+  padding: 10px;
+}
+textarea::placeholder {
+  padding: 5px 10px;
+}
+/* Подвал */
+footer {
+  margin: 0;
+  padding: 0;
+  max-height: 140px;
+  background-color: #757575;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px var(--mrl) 0;
+  font-size: 20px;
+}
+
+.footer-left {
+  font-family: "Inter-SemiBold";
+  text-align: center;
+}
+
+.footer-phone {
+  margin-bottom: 0.5rem;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem 0;
+}
+
+/* Страница о предоставляемых услугах */
+.services {
+  background-image: url("img/Subtract.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  margin-top: var(--mt);
+}
+
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: var(--mt) var(--mrl);
+}
+
+.serv-card {
+  height: 345px;
+  width: 505px;
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: fit-content;
+  grid-template-rows: 100%;
+  place-items: center;
+  transition: transform 0.6s;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.serv-card-img,
+.serv-card-info {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.serv-card-img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  width: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.serv-card-info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+  align-items: end;
+  padding: 20px;
+  background-image: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  color: white;
+  transition: transform 1s;
+  border-radius: 20px;
+}
+
+.serv-card-title {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.serv-card-description {
+  margin-top: 0.5rem;
+  font-size: 20px;
+  font-family: "Inter-Semibold";
+}
+
+.serv-card-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.2em;
+  background-color: var(--main-color);
+}
+
+.serv-card-btn {
+  font-size: 20px;
+  padding: 0.5rem;
+  background-color: transparent;
+  color: white;
+  margin-top: 0.5rem;
+  border: 2px solid white;
+}
+
+.serv-card-btn:hover {
+  transform: scale(1.05);
+  transition: all 0.1s ease;
+}
+
+.serv-card-btn:active {
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+.services-text {
+  width: 50%;
+  margin: 0 var(--mrl);
+}
+
+.services-text span {
+  color: rgb(226, 22, 22);
+  font-weight: bold;
+}
+
+@media (hover: hover) {
+  .serv-card-info {
+    transform: translateY(100%);
+  }
+
+  .serv-card-title::after {
+    opacity: 0;
+    transition: opacity 1s 0.5s;
+  }
+
+  .serv-card:hover .serv-card-info,
+  .serv-card:focus-within .serv-card-info {
+    transform: translateY(0);
+  }
+
+  .serv-card:hover .serv-card-title::after {
+    opacity: 1;
+  }
+}
+
+.add-serv {
+  font-size: 20px;
+  margin-top: var(--mt);
+}
+
+.add-serv td {
+  padding: 1.5em 10em;
+}
+
+.add-serv td:first-child {
+  padding-left: 0;
+}
+
+.add-serv td:nth-child(2) {
+  padding-right: 0;
+}
+
+.add-serv thead {
+  font-family: "Inter-Light";
+}
+
+.add-serv tbody tr td:nth-child(2) {
+  font-family: "Inter-SemiBold";
+}
+
+.add-serv caption {
+  font-size: 30px;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.add-serv thead td {
+  border-bottom: 3px solid var(--main-color);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.additional-services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Страница о компании */
+.about-container {
+  margin: var(--mt) var(--mrl);
+}
+
+.about-text {
+  margin-top: 30px;
+}
+
+/* Отзывы */
+.review {
+  width: 30%;
+}
+
+.reviews {
+  margin: 0 var(--mrl);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.rev-title,
+.rev-description {
+  margin: 0 var(--mrl);
+}
+
+.reviews-container {
+  background-color: var(--main-color);
+  color: white;
+  padding-bottom: 30px;
+}
+
+.rev-title {
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.rev-description {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 3rem;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.rev-profile {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.rev-text {
+  background-color: white;
+  color: #1e1e1e;
+  font-family: "Inter-Light";
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+
+.more-rev-btn:hover {
+  transform: scale(1.05);
+  transition: all 0.1s ease;
+}
+
+.more-rev-btn:active {
+  color: var(--main-color);
+  background-color: white;
+}
+
+.more-rev-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Оставить отзыв */
+.leave-rev-form {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  row-gap: 10px;
+  border-radius: 3px;
+}
+
+.leave-rev-form-container {
+  margin: var(--mt) auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+#profile-name,
+#profile-email,
+#review-text {
+  width: 576px;
+}
+
+#review-text {
+  height: 350px;
+  resize: none;
+}
+
+.leave-rev-form-container title {
+  padding-bottom: 10px;
+}
+
+.rev-fieldset {
+  border: none;
+  align-self: flex-start;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.approve {
+  color: white;
+}
+
+/* Страница с акциями */
+/* Слайдер */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Информация об акциях */
+.promo-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--mrl);
+  background-image: url("img/Subtract2.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: var(--mt) 0;
+  padding: 0 var(--mrl);
+}
+
+.promo-text p::first-letter {
+  font-size: 32px;
+}
+
+.promo-title {
+  font-family: "Inter-SemiBold";
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .title-desc {
+    font-size: 16px;
+  }
+}
+
+/* Шрифты */
+@font-face {
+  font-family: "Inter-Light";
+  src: url("fonts/Inter-Light.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Audiowide";
+  src: url("fonts/Audiowide-Regular.ttf");
+}
